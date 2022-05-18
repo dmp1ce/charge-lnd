@@ -156,8 +156,22 @@ Currently available properties:
 | **node.id** | match on node pubkeys - comma separated list of node pubkeys and/or file references|<node pubkey\|file url>[, <node pubkey\|file url>..]|
 | **node.min_channels** | match on number of channels the peer node has|# of channels|
 | **node.max_channels** | match on number of channels the peer node has|# of channels|
+| **node.min_channels_active** | match on number of active channels the peer node has|# of channels|
+| **node.max_channels_active** | match on number of active channels the peer node has|# of channels|
+| **node.min_channels_inactive** | match on number of inactive channels the peer node has|# of channels|
+| **node.max_channels_inactive** | match on number of inactive channels the peer node has|# of channels|
 | **node.min_capacity** | match on node total capacity|# of sats|
 | **node.max_capacity** | match on node total capacity|# of sats|
+| **node.min_capacity_active** | match on node active capacity|# of sats|
+| **node.max_capacity_active** | match on node active capacity|# of sats|
+| **node.min_capacity_inactive** | match on node inactive capacity|# of sats|
+| **node.max_capacity_inactive** | match on node inactive capacity|# of sats|
+| **node.max_ratio** | match on channels ratio|0..1|
+| **node.min_ratio** | match on channels ratio|0..1|
+| **node.max_ratio_active** | match on active channels ratio|0..1|
+| **node.min_ratio_active** | match on active channels ratio|0..1|
+| **node.max_ratio_inactive** | match on inactive channels ratio|0..1|
+| **node.min_ratio_inactive** | match on inactive channels ratio|0..1|
 
 File references should contain 1 item per line
 ### Strategies
